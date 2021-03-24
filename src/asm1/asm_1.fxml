@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="asm1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="46.0" layoutY="37.0" text="Danh sach sinh vien">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="studentTable" layoutX="46.0" layoutY="171.0" prefHeight="200.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="245.0" text="Ho va ten" />
+          <TableColumn fx:id="ageColumn" prefWidth="122.0" text="Tuoi" />
+            <TableColumn fx:id="markColumn" prefWidth="125.0" text="Diem thi" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameInput" layoutX="46.0" layoutY="77.0" prefHeight="25.0" prefWidth="230.0" promptText="Nhap ten sinh vien" />
+      <TextField fx:id="ageInput" layoutX="300.0" layoutY="77.0" prefHeight="25.0" prefWidth="106.0" promptText="Tuoi" />
+      <TextField fx:id="markInput" layoutX="433.0" layoutY="77.0" prefHeight="25.0" prefWidth="99.0" promptText="Diem thi" />
+      <Button fx:id="submitBtn" layoutX="46.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Submit" />
+   </children>
+</Pane>
